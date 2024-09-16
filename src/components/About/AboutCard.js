@@ -8,23 +8,25 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0" data-aos="zoom-in">
           <p style={{ textAlign: "justify"}}>
-            Hi Everyone, I am <span className="primary-header">Rahul Jha</span> from Darbhanga, Bihar, India. I am a computer science graduate and a passionate programmer.
+            Hi Everyone, I am <span className="primary-header">Aditya Sarfare</span> from Dublin, Ireland. I'm Software Engineer with a 3+ years of experience in developing scalable applications using Java, SQL, and Angular.js in Hexaware and Accenture.
             <br />
             <br />
-            In addition to coding, here are some other things I enjoy doing!
+           I have completed my Master’s in Information Systems and Computing from Dublin Business School and Bachelor's of Engineering from Mumbai University.
+           <br />
+           In addition to coding, here are some other soft skills which I have!
           </p>
           <ul>
             <li className="about-activity">
-              <AiOutlineArrowRight /> Writing Tech Blogs
+              <AiOutlineArrowRight /> Active Listening
             </li>
             <li className="about-activity">
-              <AiOutlineArrowRight /> Reading Books
+              <AiOutlineArrowRight /> Quick Learner
             </li>
             <li className="about-activity">
-              <AiOutlineArrowRight /> Playing Games
+              <AiOutlineArrowRight />  Creative & Solution Oriented Thinking
             </li>
             <li className="about-activity">
-              <AiOutlineArrowRight /> Traveling
+              <AiOutlineArrowRight /> Communicator and Collaborator 
             </li>
           </ul>
         </blockquote>

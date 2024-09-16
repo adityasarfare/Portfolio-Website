@@ -1,48 +1,72 @@
-import React from "react";
+
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/Avatar.png";
+import myImg from "../../Assets/Aditya_Crop2.jpg";
 import Tilt from "react-parallax-tilt";
+import rec1 from "../../Assets/Hexaware.png"
+import rec2 from "../../Assets/Accenture.png"
+
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  AiFillInstagram,
+  AiFillFacebook,
   AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
+  useEffect(() => {
+    const slider = document.getElementById("image-slider");
+    let currentIndex = 0;
+
+    function shiftSlide() {
+        currentIndex = (currentIndex + 1) % slider.children.length;
+        updateSlider();
+    }
+
+    function updateSlider() {
+        const transformValue = `translateX(-${currentIndex * 100}%)`;
+        slider.style.transform = transformValue;
+    }
+
+    const intervalId = setInterval(shiftSlide, 2000); // Auto-shift every 2 seconds
+
+    // Clear the interval on component unmount
+    return () => clearInterval(intervalId);
+}, []); // Empty dependency array ensures this effect runs once after initial render
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }} data-aos="fade-right">
-              <span className="primary-header"> ABOUT </span> ME
+            WHY YOU SHOULD <span className="primary-header">HIRE</span> ME ?
             </h1>
             <p className="home-about-body" data-aos="fade-up">
               <br />
-              I'm a <i className="primary-header">
-                Self-Taught Web Developer
+              Software Engineer with experience in developing scalable Full Stack applications using 
+               <i className="primary-header">{" "}
+                Java, SpringBoot, SQL, and Angular.js.
               </i>{" "}
-              who loves solving problems and building Websites.
+    
               <br />
-              <br />I am passionate about{" "}
-              <i className="primary-header">technologies</i> and love to learn
-              new things.
+              <br />Worked as{" "}
+              <i className="primary-header">Software Engineer</i>{" "}in{" "}
+              <i className="primary-header">Hexaware and Accenture</i>{" "}for Fintech Client.
               <br />
-              <br />I am more interested in building new
+             
+              <br />Committed to continuous learning and staying updated with{" "} 
               <i>
-                <i className="primary-header">Web Technologies and Products.</i>
-              </i>
+                <i className="primary-header">emerging Technologies, 
+                implementing Innovative tools and frameworks</i>{" "}
+              </i>to drive innovation.
               <br />
-              <br />I always apply my experience in developing products with{" "}
-              <i className="primary-header">Node.js</i> and Modern Javascript
-              Library and Framework like
-              <i className="primary-header"> React.js.</i>
+              <br />Displayed creativity and maintained a high standard of quality in {" "}
+              <i className="primary-header">programming and technical solutions</i>{" "}resulting in robust and reliable applications 
               <br />
               <br />
               Currently expanding my portfolio by building more{" "}
-              <i className="primary-header">projects </i>projects that I can add
+              <i className="primary-header">projects </i> that I can add
               here.
             </p>
           </Col>
@@ -58,6 +82,19 @@ function Home2() {
           </Col>
         </Row>
         <Row>
+              <br/><br/>
+                  <h1 data-aos="fade-right">
+                      ----------<span className="primary-header">INDUSTRIAL</span> PROJECTS ----------
+                  </h1>
+                  <div id="slider-container">
+                      <div id="image-slider">
+                          <img class="slider-image" src={rec1} alt="Recommendation 1" />
+                          <img class="slider-image" src={rec2} alt="Recommendation 2" />
+                          
+                      </div>
+                  </div>
+              </Row>
+        <Row>
           <Col md={12} className="home-about-social">
             <h1 data-aos="fade-right">
               <span className="primary-header">CONNECT </span> WITH ME
@@ -66,7 +103,7 @@ function Home2() {
             <ul className="home-about-social-links" data-aos="fade-up">
               <li className="social-icons">
                 <a
-                  href="https://github.com/Rahuljha4171"
+                  href="https://github.com/adityasarfare"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,7 +114,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/kumardotexe"
+                  href="https://x.com/SarfareAditya"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -88,7 +125,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="mailto:rahul.workmail01@gmail.com"
+                  href="mailto:adityasarfare@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -99,7 +136,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/Rahuljha4171/"
+                  href="https://www.linkedin.com/in/aditya-sarfare-412a52169"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -110,18 +147,34 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/dead.programmer/"
+                  href="https://www.facebook.com/aditya.sarfare.7/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
-                  aria-label="instagram"
+                  aria-label="facebook"
                 >
-                  <AiFillInstagram />
+                  <AiFillFacebook />
                 </a>
               </li>
             </ul>
           </Col>
         </Row>
+
+        <form name="contact" netlify>
+                  <p data-aos="fade-left">Your Contact</p>
+                  <p>
+                      <label>Name <input type="text" name="name" /></label>
+                  </p>
+                  <p>
+                      <label>Mobile <input type="contact" name="contact" /></label>
+                  </p>
+                  <p>
+                      <label>Email <input type="email" name="email" /></label>
+                  </p>
+                  <p>
+                      <button type="submit">Send</button>
+                  </p>
+              </form>
       </Container>
     </Container>
   );

@@ -3,8 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  AiFillInstagram,
   AiOutlineMail,
+  AiFillFacebook,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import "./footer.css";
@@ -17,7 +17,7 @@ function Footer() {
         <Col md="4" className="footer-copywright">
           <span>
             Designed and Developed by{" "}
-            <i className="primary-header">Rahul Jha</i>
+            <i className="primary-header">Aditya Sarfare</i>
           </span>
         </Col>
         <Col md="4" className="footer-body">
@@ -26,7 +26,7 @@ function Footer() {
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="github"
-                href="https://github.com/Rahuljha4171"
+                href="https://github.com/adityasarfare"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="github"
@@ -38,7 +38,7 @@ function Footer() {
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="twitter"
-                href="https://twitter.com/kumardotexe"
+                href="https://x.com/SarfareAditya"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="twitter"
@@ -50,7 +50,7 @@ function Footer() {
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="email"
-                href="mailto:rahul.workmail01@gmail.com"
+                href="mailto:adityasarfare@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="email"
@@ -62,7 +62,7 @@ function Footer() {
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="linkedin"
-                href="https://www.linkedin.com/in/Rahuljha4171/"
+                href="https://www.linkedin.com/in/aditya-sarfare-412a52169"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="linkedin"
@@ -74,12 +74,12 @@ function Footer() {
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="instagram"
-                href="https://www.instagram.com/dead.programmer/"
+                href="https://www.facebook.com/aditya.sarfare.7/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="instagram"
+                aria-label="facebook"
               >
-                <AiFillInstagram />
+                <AiFillFacebook />
               </a>
             </li>
           </ul>
