@@ -162,7 +162,7 @@ function Home2() {
           </Col>
         </Row>
 
-        <form name="contact" method="POST" data-netlify="true" action="/thank-you"s netlify>
+        <form name="contact" method="POST" data-netlify="true" action="/thank-you" netlify>
                   <p data-aos="fade-left">Your Contact</p>
                   <p>
                       <label>Name <input type="text" name="name" /></label>
