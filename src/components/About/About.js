@@ -26,7 +26,7 @@ function About() {
               style={{ fontSize: "2.1em", paddingBottom: "20px" }}
               data-aos="fade-right"
             >
-              <span className="primary-header">Who</span> am I !
+              <span className="primary-header">What</span> defines me!
             </h1>
             <div data-aos="fade-up">
               <Aboutcard />

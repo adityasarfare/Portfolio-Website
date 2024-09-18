@@ -2,7 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
+  // AiOutlineTwitter,
+  AiOutlineClose,
   AiOutlineMail,
   AiFillFacebook,
 } from "react-icons/ai";
@@ -43,7 +44,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 aria-label="twitter"
               >
-                <AiOutlineTwitter />
+                <AiOutlineClose />
               </a>
             </li>
             <li className="social-icons">

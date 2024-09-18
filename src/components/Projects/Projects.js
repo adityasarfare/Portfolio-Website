@@ -7,7 +7,7 @@ import CyberBullying from "../../Assets/Projects/WhatsApp_CyberBullying.png";
 import Portfolio from "../../Assets/Projects/Portfolio.png";
 import Usermanagment from "../../Assets/Projects/UserLogin.png";
 import Ecart from "../../Assets/Projects/ecart.png";
-// import ExpenseTracker from "../../Assets/Projects/ExpenseTracker.png";x
+
 
 import "./project.css";
 
@@ -16,7 +16,7 @@ function Projects() {
     <Container fluid className="project-section">
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="Fluorescent-Blue">Works </strong>
+          My Recent <strong className="Fluorescent-Blue">Projects </strong>
         </h1>
         <p>Here are a few projects I've worked on recently.</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
@@ -46,7 +46,7 @@ function Projects() {
               title="CYBER BULLY DETECTION USING MACHINE LEARNING ALGORITHMS"
               description="This project is exclusively done for kids who are new to social media. To prevent such harassment, I use Machine learning algorithms to detect the use of abusive words by bullies automatically. At the same time, I use deep learning algorithms to detect porn and nude images."
               ghLink="https://github.com/adityasarfare/Dissertation"
-              // demoLink="https://chat-app-rahuljha4171.vercel.app/"
+             
             />
           </Col>
 
@@ -56,20 +56,12 @@ function Projects() {
               title="Portfolio Website"
               description="My personal Portfolio Website build with React and Bootstrap. It is fully responsive website which supports both dark and light mode."
               ghLink="https://github.com/adityasarfare/Portfolio-Website"
-              // demoLink="https://rahuljha.info/"
+              
             />
           </Col>
          
 
-          {/* <Col md={6} lg={4} className="project-card">
-            <ProjectCard
-              imgPath={ExpenseTracker}
-              title="Expense Tracker"
-              description="An online expense tracker using React, Node, Express, and MongoDB as the database. It allows you to keep track of your expenses, investments, and savings. All past transactions are listed, and you can also delete them. "
-              ghLink="https://github.com/rahuljha4171/Expense-Tracker"
-              demoLink="https://expense-tracker.rahuljha4171.vercel.app/"
-            />
-          </Col> */}
+         
         </Row>
       </Container>
       <ScrollToTop />

@@ -8,13 +8,12 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0" data-aos="zoom-in">
           <p style={{ textAlign: "justify"}}>
-          Hi Everyone,
-          I’m <span className="primary-header">Aditya Sarfare</span>, a Software Engineer currently based in Dublin, Ireland. With over 3 years of experience, I specialize in developing scalable applications using technologies such as Java, SQL, and Angular.js. Throughout my career, I have had the opportunity to work with leading organizations like Hexaware and Accenture, where I honed my skills in software development and project execution. from Dublin, Ireland.
+
+          Hello, everyone. My name is <span className="primary-header">Aditya Sarfare</span>, and I am a Software Engineer currently residing in <span className="primary-header">Dublin, Ireland</span>. With over three years of professional experience, I specialize in developing scalable applications using technologies such as Java, SQL, and Angular.js. My career has afforded me the opportunity to work with prominent organizations like Hexaware and Accenture, where I refined my expertise in software development and project management.
             <br />
-            I hold a Master's degree in Information Systems and Computing from Dublin Business School, complemented by a Bachelor's degree in Engineering from Mumbai University. I'm passionate about leveraging technology to solve complex problems and am always eager to learn and grow in the ever-evolving tech landscape.
+          I hold a Master's degree in Information Systems and Computing from Dublin Business School, along with a Bachelor's degree in Engineering from Mumbai University. I am deeply passionate about utilizing technology to address complex problems and am consistently seeking opportunities to learn and grow in the rapidly evolving tech landscape.
            <br />
-           In addition to coding, here are some other soft skills which I have!
-          </p>
+           Beyond coding, I have developed a range of soft skills that complement my technical abilities.          </p>
           <ul>
             <li className="about-activity">
               <AiOutlineArrowRight /> Active Listening

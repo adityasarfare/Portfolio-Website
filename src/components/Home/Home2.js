@@ -6,9 +6,11 @@ import Tilt from "react-parallax-tilt";
 import rec1 from "../../Assets/Hexaware.png"
 import rec2 from "../../Assets/Accenture.png"
 
+
 import {
   AiFillGithub,
-  AiOutlineTwitter,
+  // AiOutlineTwitter,
+  AiOutlineClose,
   AiFillFacebook,
   AiOutlineMail,
 } from "react-icons/ai";
@@ -29,7 +31,7 @@ function Home2() {
         slider.style.transform = transformValue;
     }
 
-    const intervalId = setInterval(shiftSlide, 2000); // Auto-shift every 2 seconds
+    const intervalId = setInterval(shiftSlide, 4000); // Auto-shift every 2 seconds
 
     // Clear the interval on component unmount
     return () => clearInterval(intervalId);
@@ -40,7 +42,7 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }} data-aos="fade-right">
-            WHY YOU SHOULD <span className="primary-header">HIRE</span> ME ?
+            WHY SHOULD YOU <span className="primary-header">HIRE</span> ME ?
             </h1>
             <p className="home-about-body" data-aos="fade-up">
               <br />
@@ -120,7 +122,7 @@ function Home2() {
                   className="icon-colour  home-social-icons"
                   aria-label="twitter"
                 >
-                  <AiOutlineTwitter />
+                  <AiOutlineClose />
                 </a>
               </li>
               <li className="social-icons">
@@ -160,7 +162,7 @@ function Home2() {
           </Col>
         </Row>
 
-        <form name="contact" netlify>
+        <form name="contact" method="POST" data-netlify="true" action="/thank-you"s netlify>
                   <p data-aos="fade-left">Your Contact</p>
                   <p>
                       <label>Name <input type="text" name="name" /></label>
